@@ -1,0 +1,4 @@
+# Aca le informamos a git que archivos o carpetas no queremos que git este pendiente de los cambios.
+
+node_modules/
+dist/

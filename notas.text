@@ -1,0 +1,22 @@
+Webpack realiza tareas automaticas por nosotros ej adaptar nuestro codigo a otros navegadores. 
+Se suele trabajar con diferentes archivos js para que nuestro codigo este dividido, de esta manera es mas sencillo solucionar errores. pero debemos trabajr con importaciones de modulos, un modulo es una fraccion de codigo de un archivo que cumple con una funcionalidad que yo necesito, por lo que debo importarlo a mi archivo para que este funcione.
+Puedo usar Webpack en mis apps.(TAREA = Aplicarlo en los codigos JS de mis paginas.)
+
+Pluginns: Usar los que verifica Webpack. Los plugins son complementos que añaden funcionalidades extra o mejoras a los programas. Es decir, son miniprogramas que suman alguna característica que no venía por defecto en el programa original. Funcionan como añadidos pero no por sí mismos.
+
+npm install --save-dev html-loader  este carga el html
+
+npm install --save-dev html-webpack-plugin       este inyecta nuestro archivo final de js dentro de nuestro index.html nos inyecta esto es nuestra app <script defer src="main.js"></script>.  Por defecto crea el index, lo relaciona pero no nos toma las etiquetas nuevas que creamos.
+
+Mi webpack-dev-server que se instala en la terminal, es una dependencia de desarrollo que no va a la de produccion, ya que en produccion ya tengo mi servidor.
+
+
+npm install --save-dev css-loader style-loader     busca el archhivos css ////busca css loader//
+                npm install file-loader --save-dev lo usamos para trabajar con imagenes (imgs recursos estaticos.)
+
+                npm i -D css-minimizer-webpack-plugin terser-webpack-plugin 2 plugins para css("terser-webpack-plugin": "^5.3.3","css-minimizer-webpack-plugin": "^4.0.0",) //esto es para que nos minimice o optimice el css, todo junto
+
+
+
+                Babel es unalibreria que adapta nuestro codigo a navegadores mas antiguos.
+                npm install --save-dev babel-loader @babel/core    instalamos babel.
